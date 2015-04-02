@@ -1,0 +1,12 @@
+h1 {
+  font-weight: bold; }
+
+body > * {
+  margin-right: 2.5rem;
+  margin-left: 11.5rem; }
+
+p {
+  font-family: "Playfair PT";
+  font-size: 20px; }
+
+/*# sourceMappingURL=style.css.map */
