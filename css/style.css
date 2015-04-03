@@ -9,4 +9,7 @@ p {
   font-family: "Playfair PT";
   font-size: 16px; }
 
+.dl-horizontal dt {
+  white-space: normal; }
+
 /*# sourceMappingURL=style.css.map */
