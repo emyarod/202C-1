@@ -1,10 +1,6 @@
 h1 {
   font-weight: bold; }
 
-body > * {
-  margin-right: 2.5rem;
-  margin-left: 10rem; }
-
 p {
   font-family: "Playfair PT";
   font-size: 16px; }
