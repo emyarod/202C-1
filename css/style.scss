@@ -24,12 +24,16 @@ body > * {
 }
 
 p {
-	font-family: "Playfair PT";
+	font-family: "Droid Serif";
+	// font-weight: normal;
 	font-size: 16px;
 }
 
 .dl-horizontal dt {
 	white-space: normal;
+}
+header.subheader > * {
+	// font-weight: bold;
 }
 
 // .glyphicon-home {
