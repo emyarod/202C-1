@@ -1,15 +1,9 @@
 h1, h2 {
   font-weight: bold; }
 
-h1#title {
-  margin-bottom: 36px; }
-
 p {
   font-family: "Droid Serif";
   font-size: 16px; }
-
-div#content {
-  margin-bottom: 100px; }
 
 a.collapsed[aria-expanded="false"] span.caret {
   transform: rotate(270deg); }
@@ -19,9 +13,6 @@ a.collapsed[aria-expanded="true"] span.caret {
 
 .dl-horizontal dt {
   white-space: normal; }
-
-#authors section {
-  margin-bottom: 16px; }
 
 .fixed {
   position: fixed; }
