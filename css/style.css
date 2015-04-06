@@ -1,9 +1,15 @@
-h2 {
+h1, h2 {
   font-weight: bold; }
+
+h1#title {
+  margin-bottom: 36px; }
 
 p {
   font-family: "Droid Serif";
   font-size: 16px; }
+
+div#content {
+  margin-bottom: 100px; }
 
 a.collapsed[aria-expanded="false"] span.caret {
   transform: rotate(270deg); }
@@ -14,14 +20,16 @@ a.collapsed[aria-expanded="true"] span.caret {
 .dl-horizontal dt {
   white-space: normal; }
 
+#authors section {
+  margin-bottom: 16px; }
+
 .fixed {
   position: fixed; }
 
 /* sidebar */
 .bs-docs-sidebar {
   padding-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  margin: 20px 0; }
 
 /* all links */
 .bs-docs-sidebar .nav > li > a {
@@ -33,9 +41,7 @@ a.collapsed[aria-expanded="true"] span.caret {
 
 /* nested links */
 .bs-docs-sidebar .nav .nav > li > a {
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 30px;
+  padding: 1px 0 1px 30px;
   font-size: 12px; }
 
 /* active & hover links */
