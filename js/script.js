@@ -14,3 +14,8 @@
 //    $('body').toggleClass('show-nav');
 //   }
 // });
+
+$('body').scrollspy({
+    target: '.bs-docs-sidebar',
+    offset: 40
+});
