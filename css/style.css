@@ -1,4 +1,7 @@
-h1, h2 {
+* {
+  transition: all 0.5s ease 0s; }
+
+h1, h2, h5 {
   font-weight: bold; }
 
 p {
@@ -6,7 +9,7 @@ p {
   font-size: 16px; }
 
 a.collapsed[aria-expanded="false"] span.caret {
-  transform: rotate(270deg); }
+  transform: rotate(-90deg); }
 
 a.collapsed[aria-expanded="true"] span.caret {
   transform: rotate(0deg); }
