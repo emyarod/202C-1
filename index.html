@@ -8,6 +8,7 @@
   <link href="http://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet" type="text/css">
   <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/easy-sidebar.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,20 +18,59 @@
   <![endif]-->
 </head>
 <body>
-  <div id="content">
-    <div class="container">
-      <header>
-        <h1>Oklahoma State 4-H Horse Judging Guide</h1>
-      </header>
-      <!-- <div class="thumbnail">
-        <img src="images/cover.jpg" alt="Oklahoma State 4-H Horse Judging Guide">
-      </div> -->
+  <nav class="navbar navbar-inverse easy-sidebar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle easy-sidebar-toggle" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Easy-Sidebar</a>
+      </div>
+
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav">
+        <li><a href="#">Link</a></li>
+      </ul>
     </div>
-  </div>
+  </nav>
+
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
-        <!-- <div class="cover" id="cover">
+        <div class="cover" id="cover">
+          <button class="btn easy-sidebar-toggle" aria-label="hamburger">
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+          </button>
+          <header class="text-center">
+            <h1>Oklahoma State 4-H Horse Judging Guide</h1>
+          </header>
+          <!-- <div class="thumbnail">
+            <img src="images/cover.jpg" alt="Oklahoma State 4-H Horse Judging Guide">
+          </div> -->
         </div>
         <div id="authors">
           <section class="text-center">
@@ -44,27 +84,28 @@
           </section>
           Material prepared by:
           <div>
-            <section class="col-lg-4">
+            <section class="col-xs-4">
               <h5>David Freeman</h5>
-              Oklahoma State University
-              Extension Equine Specialist
+              Oklahoma State University<br>
+              Extension Equine Specialist<br>
               Stillwater, Oklahoma
             </section>
-              <section class="col-lg-4">
+              <section class="col-xs-4">
               <h5>Steven Cooper</h5>
-              Associate Professor
-              Department of Animal Science
+              Associate Professor<br>
+              Department of Animal Science<br>
               Oklahoma State University
             </section>
-              <section class="col-lg-4">
+              <section class="col-xs-4">
               <h5>Katie Snyder</h5>
-              2006-2007 Horse Program Aide
-              Department of Animal Science
+              2006-2007 Horse Program Aide<br>
+              Department of Animal Science<br>
               Oklahoma State University
             </section>
           </div>
         </div>
-        <hr> -->
+        &nbsp;
+        <hr>
       	<div class="chapter" id="chapter_one">
           <header>
             <h2>Suggestions for Building Youth Judging Programs</h2>
@@ -2763,7 +2804,7 @@
         </div>
       </div>
       <div class="col-lg-4">
-        <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+        <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top" id="nav">
           <ul id="sidebar" class="nav nav-stacked fixed">
             <li>
               <a href="#chapter_one">Suggestions for Building Youth Judging Programs</a>
@@ -2853,6 +2894,7 @@
   </div>
   <script src="js/jquery-1.11.2.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.detect_swipe.js"></script>  
   <script src="js/script.js"></script>
 </body>
 </html>
