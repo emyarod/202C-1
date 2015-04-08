@@ -9,3 +9,4 @@ logs
 .lock-wscript
 
 *.css.map
+*.scss
